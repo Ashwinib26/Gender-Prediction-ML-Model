@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Feature Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2> Gender Identification Form </h2>
+    <form action="/submit" method="POST">
+        <label for="long_hair">Long Hair (Yes/No):</label>
+        <input type="text" id="long_hair" name="long_hair" placeholder="Yes or No" required>
+
+        <label for="forehead_width_cm">Forehead Width (cm):</label>
+        <input type="number" id="forehead_width_cm" name="forehead_width_cm" step="0.1" placeholder="Enter forehead width in cm" required>
+
+        <label for="forehead_height_cm">Forehead Height (cm):</label>
+        <input type="number" id="forehead_height_cm" name="forehead_height_cm" step="0.1" placeholder="Enter forehead height in cm" required>
+
+        <label for="nose_wide">Nose Wide (Yes/No):</label>
+        <input type="text" id="nose_wide" name="nose_wide" placeholder="Yes or No" required>
+
+        <label for="nose_long">Nose Long (Yes/No):</label>
+        <input type="text" id="nose_long" name="nose_long" placeholder="Yes or No" required>
+
+        <label for="lips_thin">Lips Thin (Yes/No):</label>
+        <input type="text" id="lips_thin" name="lips_thin" placeholder="Yes or No" required>
+
+        <label for="distance_nose_to_lip_long">Distance Nose to Lip Long (Yes/No):</label>
+        <input type="text" id="distance_nose_to_lip_long" name="distance_nose_to_lip_long" placeholder="Yes or No" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
